@@ -1,0 +1,440 @@
+body {
+	font-family: 'FranklinGothic-Medium';
+	font-weight: 500;
+}
+
+
+
+header {}
+nav {
+	height: 61px;
+	background: #344051;
+	color: #fff;
+	text-transform: uppercase;
+}
+.logo {
+	float: left;
+	font-size: 24px;
+	line-height: 61px;
+	padding-left: 388px;
+	text-transform: none;
+}
+.menu {
+	float: left;
+	font-size: 17px;
+	line-height: 61px;
+	padding-left: 430px;
+}	
+.menu li {
+	float: left;
+	margin-right: 40px;
+}
+
+/*--------------------------------------------------*/
+
+.main {
+	/*Извините конечно, но я решил пошалить с дисплей флекс, но в точности как на макете сделать не получится*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 1019px; /*calc(100% - 61px) почему-то не работает*/ 
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.10) 5%), url(../img/bgmain1.png) no-repeat right bottom/45%, url(../img/bgmain2.jpg) no-repeat center;
+	text-align: center;
+}
+.main .title__container {
+	margin-right: 600px;
+}
+.main h1 {
+	font-size: 79px;
+	color: #2c384a;
+}
+.main h4 {
+	margin: 29px 0px 0px 0px;
+	color: #79818d;
+	font-size: 21px;
+}
+.buttons__container {
+	margin-right: 600px;
+	padding-top: 55px;
+}
+.main input {
+	margin: 0px 13px;
+	color: #6d7682;
+	font-size: 19px;
+	height: 42px;
+	padding: 0px 15px;
+	border: 2.1px solid #6d7682;
+	border-radius: 5px;
+}
+
+/*--------------------------------------------------*/
+
+.about-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 730px;
+}
+.title_container {}
+.about-me h2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 108px;
+	font-size: 33px;
+	text-transform: uppercase;
+}
+h2::after {
+	content: '';
+	margin-top: 31px;
+	height: 4px;
+	width: 72px;
+	background: #d17700;
+}
+.about-me .img__container {
+	margin-top: 59px;
+}
+.about-me .text__container {
+	margin-top: 22px;
+	font-family: Calibri;
+  	font-size: 18px;
+  	text-align: left;
+  	width: 731px;
+  	color: #3f495a;
+}
+.text__lorem1 {}
+.text__lorem2 {}
+.about-me input {
+	margin-top: 33px;
+	color: #6d7682;
+	font-size: 17px;
+	height: 34px;
+	padding: 0px 13px 0px 33px;
+	border: 2.1px solid #6d7682;
+	border-radius: 5px;
+	background: url(../img/download.jpg) no-repeat 12px 50%;
+}
+
+/*--------------------------------------------------*/
+
+.my-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 523px;
+	background: url(../img/my-skillsbg.jpg) no-repeat center;
+}
+.title__container h2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 33px;
+	text-transform: uppercase;
+}
+.row-box {
+	display: flex;
+	justify-content: center;
+}
+.row-box-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	padding: 0px 41.5px;
+}
+.my-skills .img__container {}
+.my-skills .title__container_small {
+	padding-top: 34px;
+	font-size: 18.5px;
+	color: #cf7600;
+	font-family: "PT Sans";
+	font-weight: 800;
+}
+.my-skills .text__container {
+	font-family: Calibri;
+	text-align: center;
+	padding-top: 13px;
+	width: 210px;
+}
+
+/*--------------------------------------------------*/
+
+.cases {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 1150px;
+}
+.title__container h2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 33px;
+	text-transform: uppercase;
+}
+.title__container h4 {
+	padding-top: 35px;
+	color: #3f495a;
+	font-size: 17px;
+}
+.website__box {
+	width: 1169px;
+	display: flex;
+	align-items: start;
+ }
+.title__container_web h3{
+ 	font-size: 25px;
+ 	color: #384354;
+ }
+.title__container_web h4{
+ 	font-family: Calibri;
+ 	padding: 14px 0px;
+ }
+ .title__container_web input{
+ 	font-size: 21px;
+ 	margin-top: 8px;
+ 	padding: 7.5px 21px;
+ 	background: #63b5ae;
+ 	border-radius: 5px;
+ 	color: #fff;
+ }
+.project__box {
+ 	padding-left: 83px;
+ }
+.cases .title__container {
+	font-size: 25px;
+	color: #384354;
+}
+.cases .text__container {
+	padding-top: 6px;
+	font-family: Calibri;
+  	font-size: 21px;
+}
+
+/*--------------------------------------------------*/
+
+.cost-calculation {
+	height: 840px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.cost-title__container {
+	padding-top: 0px;
+	font-size: 46px;
+	color: #1c2534;
+}
+.select__container{
+}
+.select__container_item {
+	height: 100px;
+	margin-top: 44px;
+}
+.select__container_item h3 {
+	font-size: 29px;
+	color: #1c2534;
+	padding-left: 4px;
+}
+.select__container_item select {
+	font-size: 17px;
+	color: #737373;
+	background: #eeeeee;
+	height: 57px;
+	width: 891px;
+	margin-top: 20px;
+	padding: 15px;
+}
+.result {
+	width: 891px;
+	align-items: start;
+	font-size: 21px;
+}
+.deadlines__container {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid #d1d1d1;
+	padding: 23px 0px;
+}
+.cost__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*--------------------------------------------------*/
+
+.statistic {
+	height: 499px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: url(../img/statisticbg.jpg) no-repeat center;
+}
+.statistic .amount__container {
+	padding-top: 32px;
+	font-size: 28px;
+	color: #323d4f;
+	font-weight: 800;
+}
+.statistic .text__container {
+	padding-top: 32px;
+	font-family: Calibri;
+	font-size: 17px;
+	color: #323e4f;
+}
+
+/*--------------------------------------------------*/
+
+.reviews {
+	height: 590px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.reviews .text__container {
+	text-align: center;
+	width: 688px;
+	font-family: Calibri;
+	font-size: 17px;
+	color: #243042;
+}
+.reviews .author__container{
+	font-family: Calibri;
+	font-size: 17px;
+	color: #243042;
+}
+.author__container span{
+	font-weight: 800;
+}
+
+/*Не имею ни малейшего понятия, как этот слайдер будер работать потом, я просто сделал декоративные кнопочки*/
+.reviews label {
+	display: inline-block;
+	height: 10px;
+	margin: 0px 7px;
+	width: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background: #cfd2d7;
+}
+.reviews label:first-child{
+	background: #c96500;
+}
+.reviews label:hover{
+	background: #c96500;
+}
+
+/*--------------------------------------------------*/
+
+.contact {
+	height: 808px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: url(../img/contactbg.jpg) no-repeat center;
+	color: #ffffff;
+}
+.contact .text__container {
+	font-family: Calibri;
+ 	font-size: 17px;
+}
+.contact .row-box {}
+.contact .row-box-item {
+	justify-content: start;
+	padding: 0px 51px;
+}
+.row-box-item .text__container {
+	padding-top: 12px;
+	font-family: Calibri;
+	font-size: 17px;
+	text-align: center;
+}
+.social__container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.social-item{
+	padding: 0px 27px;
+}
+.message {
+	font-size: 21px;
+}
+.interactive input{
+	background: #fff;
+	opacity: 0.8;
+	width: 100%;
+	height: 34px;
+	padding-left: 13px;
+	font-size: 17px;
+}
+.void {
+	width: 29px;
+}
+
+/*Не получается задать фон для текстового поля*/
+.interactive textarea {
+	/*background: #fff;
+	opacity: 0.8;*/
+	margin-top: 14px;
+	padding-left: 13px;
+    	width: 732px; 
+    	height: 94px; 
+    	resize: none;
+    	font-size: 17px;
+} 
+.input__container{
+	display: flex;
+	justify-content: space-between;
+}
+.contact input{
+	height: 46px;
+	padding: 0px 15px;
+	font-size: 21px;
+	color: #fff;
+	border: 2.1px solid #fff;
+	border-radius: 5px;
+}
+
+/*--------------------------------------------------*/
+
+.map {
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/mapbg.jpg) no-repeat center;
+}
+.map .button__container {
+	background: #fff;
+	padding: 18px 33px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.map input {
+	font-size: 17.5px;
+}
+
+/*--------------------------------------------------*/
+
+footer {
+	height: 96px;
+	background: url(../img/footerbg.jpg) no-repeat center;
+}
+.copyright{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 13.5px;
+}

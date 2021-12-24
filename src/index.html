@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Структура макета из 2-го урока</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Vova">
+	<meta name="description" content="Описание этой страницы">
+	<meta property="og:title" content="Описание этой страницы">
+	<meta name="robots" content="all">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nullstyle.css">
+	<link rel="stylesheet" href="css/fontstyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">Андрей Браун</div>
+			<div class="menu">
+				<ul>
+					<li>Обо мне</li>
+					<li>Услуги</li>
+					<li>Кейсы</li>
+					<li>Прайс</li>
+					<li>Отзывы</li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+<div class="all">
+	<div class="main">
+		<div class="title__container">
+			<h1>Привет<br>Я Андрей Браун</h1>
+			<h4>Фулл стек веб-разработчик</h4>
+		</div>
+		<div class="buttons__container">
+			<input type="submit" value="Обо мне">
+			<input type="submit" value="Мои работы">
+		</div>
+
+	</div>
+
+
+
+	<div class="about-me">
+		<div class="title__container">
+			<h2>Обо мне</h2>
+		</div>
+		<div class="img__container">
+			<img src="img/about-meguy.jpg" alt="Здесь должна быть картинка">
+		</div>
+		<div class="text__container">
+			<div class="text__lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+			</div>
+			<br>
+			<div class="text__lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+			</div>
+		</div>
+		<div class="download-button__container">
+			<input type="submit" value="Скачать резюме">
+		</div>
+	</div>
+
+
+
+
+	<div class="my-skills">
+		<div class="title__container">
+			<h2>Что я умею</h2>
+		</div>
+		<div class="row-box">
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/myskillsimg1.png" alt="Здесь должна быть картинка"></div>
+				<div class="title__container_small">Веб-дизайн</div>
+				<div class="text__container">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/myskillsimg2.png" alt="Здесь должна быть картинка"></div>
+				<div class="title__container_small">Разработка</div>
+				<div class="text__container">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/myskillsimg3.png" alt="Здесь должна быть картинка"></div>
+				<div class="title__container_small">CEO-Оптимизация</div>
+				<div class="text__container">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/myskillsimg4.png" alt="Здесь должна быть картинка"></div>
+				<div class="title__container_small">Маркетинг</div>
+				<div class="text__container">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="cases">
+		<div class="title__container">
+			<h2>Кейсы</h2>
+			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi recusandae earum neque aspernatur. Velit magnam qui, iste culpa nulla commodi ad nesciunt quibusdam voluptas, veniam autem, perferendis nam fugiat.</h4>
+		</div>
+		<div class="img__container"><img src="img/opencloud.jpg" alt="Здесь должна быть картинка"></div>
+		<div class="website__box">
+			<div class="title__container_web">
+				<h3>CLIENT:</h3>
+				<h4>Какая-то компания</h4>
+				<h3>WEBSITE:</h3>
+				<h4>http://www.somedomain.com</h4>
+				<input type="submit" value="VISIT LIVE SITE">
+			</div>
+			<div class="project__box">
+				<div class="title__container"><h3>Название проекта</h3></div>
+				<div class="text__container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam delectus soluta hic autem quia sit officia possimus voluptas minima adipisci exercitationem sunt sed ducimus ratione maiores earum magnam culpa, harum.</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="cost-calculation">
+		<div class="cost-title__container">
+			Рассчет стоимости
+		</div>
+		<div class="select__container">
+			<div class="select__container_item">
+				<h3>ТИП САЙТА</h3>
+				<select type="submit" name="list1" id="list">
+					<option value="none" hidden="">Выберите пункт...</option>
+					<option name="site1">Сайт-визитка</option>
+					<option name="site2">Интернет-магазин</option>
+					<option name="site3">Тематический сайт</option>
+				</select>
+			</div>
+			<div class="select__container_item">
+				<h3>ДИЗАЙН</h3>
+				<select type="submit" name="list2" id="list">
+					<option value="none" hidden="">Выберите пункт...</option>
+					<option name="design1">Дизайн1</option>
+					<option name="design2">Дизайн2</option>
+					<option name="design3">Дизайн3</option>
+				</select>
+			</div>
+			<div class="select__container_item">
+				<h3>АДАПТИВНОСТЬ</h3>
+				<select type="submit" name="list3" id="list">
+					<option value="none" hidden="">Выберите пункт...</option>
+					<option name="adapt1">ПК</option>
+					<option name="adapt2">Телефон</option>
+					<option name="adapt3">ПК и телефон</option>
+				</select>
+			</div>
+		</div>
+		<div class="result">
+			<div class="deadlines__container">
+				<p>Сроки</p><p>0</p>
+			</div>
+			<div class="cost__container">
+				<p>Стоимость</p><p>0</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="statistic">
+		<div class="title__container">
+			<h2>Немного статистики</h2>
+		</div>
+		<div class="row-box">
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/statisticimg1.png" alt="Здесь должна быть картинка"></div>
+				<div class="amount__container">120</div>
+				<div class="text__container">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/statisticimg2.png" alt="Здесь должна быть картинка"></div>
+				<div class="amount__container">4,600</div>
+				<div class="text__container">ЧАСОВ РАБОТЫ</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/statisticimg3.png" alt="Здесь должна быть картинка"></div>
+				<div class="amount__container">340</div>
+				<div class="text__container">ПРОЕКТОВ ЗАВЕРШЕНО</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/statisticimg4.png" alt="Здесь должна быть картинка"></div>
+				<div class="amount__container">23</div>
+				<div class="text__container">НАГРАД ПОЛУЧЕНО</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="reviews">
+		<div class="title__container">
+			<h2>Отзывы</h2>
+		</div>
+		<div class="img__container"><img src="img/reviewauthor.jpg" alt="Здесь должна быть картинка"></div>
+		<div class="text__container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
+		facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
+		</div>
+		<div class="author__container">
+			<span>Михаил</span>, Ген директор ПАО “Газпром”.
+		</div>
+		<div class="controls">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+		</div>
+	</div>
+
+
+
+	<div class="contact">
+		<div class="title__container">
+			<h2>Мои контакты</h2>
+		</div>
+		<div class="text__container">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec ornare diamcoccodo</div>
+		<div class="row-box">
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/geo.png" alt="Здесь должна быть картинка"></div>
+				<div class="text__container">Санкт-Петербург<br>Невский проспект 11</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/letter.png" alt="Здесь должна быть картинка"></div>
+				<div class="text__container">info@companyname.com</div>
+			</div>
+			<div class="row-box-item">
+				<div class="img__container"><img src="img/труба_зовет.png" alt="Здесь должна быть картинка"></div>
+				<div class="text__container">+7 999 999-99-99</div>
+			</div>
+		</div>
+		<div class="message">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+		<div class="interactive">
+			<form class="input__container" action="#">
+				<input type="text" name="Username" placeholder="Имя">
+				<div class="void"></div>
+				<input type="email" name="Email" placeholder="Email">
+			</form>
+			<form class="input__container" action="#">
+				<textarea name="message" id="1" placeholder="Сообщение"></textarea>
+			</form>
+		</div>
+		<div class="button__container">
+				<input type="submit" value="Отправить">
+		</div>
+		<div class="social__container">
+			<div class="social-item"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></div>
+			<div class="social-item"><a href="#"><img src="img/twitter.png" alt="Twitter"></a></div>
+			<div class="social-item"><a href="#"><img src="img/social1.png" alt="Соц.сеть1"></a></div>
+			<div class="social-item"><a href="#"><img src="img/github.png" alt="GitHub"></a></div>
+			<div class="social-item"><a href="#"><img src="img/inst.png" alt="Instagram"></a></div>
+			<div class="social-item"><a href="#"><img src="img/social2.png" alt="Соц.сеть2"></a></div>
+		</div>
+	</div>
+
+
+
+	<div class="map">
+		<div class="button__container">
+			<input type="submit" value="I`M HERE">
+		</div>	
+	</div>
+</div>
+
+
+
+	<footer>
+		<div class="copyright">
+			Copyright © 2021 Андрей Браун. Design by Web 
+		</div>
+	</footer>
+</body>
+</html>

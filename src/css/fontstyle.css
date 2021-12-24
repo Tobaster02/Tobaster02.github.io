@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'FranklinGothic-Medium';
+	src: url('../fonts/ofont.ru_Franklin Gothic Medium Cond.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Franklin Gothic Medium Cond.woff') format('woff'), url('../fonts/ofont.ru_Franklin Gothic Medium Cond.ttf') format('truetype'), url('../fonts/ofont.ru_Franklin Gothic Medium Cond.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Calibri';
+	src: url('../fonts/CALIBRI.eot');
+	src: local('☺'), url('../fonts/CALIBRI.woff') format('woff'), url('../fonts/CALIBRI.ttf') format('truetype'), url('../fonts/CALIBRI.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}

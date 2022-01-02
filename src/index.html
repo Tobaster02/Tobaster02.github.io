@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Структура макета из 2-го урока</title>
+	<title>Анимации</title>
 	<meta charset="utf-8">
 	<meta name="Author" content="Vova">
 	<meta name="description" content="Описание этой страницы">
@@ -10,13 +10,22 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/nullstyle.css">
 	<link rel="stylesheet" href="css/fontstyle.css">
+	<link rel="stylesheet" href="css/animation.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+	<script src="js/preloader.js"></script>
+	<div id="page-preloader" class="preloader">
+  		<div class="preloader__row">
+   		 	<div class="preloader__item"></div>
+    			<div class="preloader__item"></div>
+  		</div>
+	</div>
+<div class="wrapper">
 	<header>
-		<nav>
+		<nav class="header">
 			<div class="logo">Андрей Браун</div>
 			<div class="menu">
 				<ul>
@@ -30,7 +39,7 @@
 			</div>
 		</nav>
 	</header>
-<div class="all">
+	<main>
 	<div class="main">
 		<div class="title__container">
 			<h1>Привет<br>Я Андрей Браун</h1>
@@ -59,7 +68,7 @@
 			<div class="text__lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
 			</div>
 		</div>
-		<div class="download-button__container">
+		<div class="download-button__container button_animate">
 			<input type="submit" value="Скачать резюме">
 		</div>
 	</div>
@@ -245,7 +254,7 @@
 				<textarea name="message" id="1" placeholder="Сообщение"></textarea>
 			</form>
 		</div>
-		<div class="button__container">
+		<div class="contact__button button_animate">
 				<input type="submit" value="Отправить">
 		</div>
 		<div class="social__container">
@@ -261,18 +270,18 @@
 
 
 	<div class="map">
-		<div class="button__container">
+		<div class="map__button">
 			<input type="submit" value="I`M HERE">
 		</div>	
 	</div>
-</div>
-
+	</main>
 
 
 	<footer>
 		<div class="copyright">
-			Copyright © 2021 Андрей Браун. Design by Web 
+			<span class="copyright__text">Copyright © 2021 Андрей Браун. Design by Web</span>
 		</div>
 	</footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,238 @@
+/*-----------------------ПСЕВДОКЛАССЫ---------------------------*/
+
+.interactive input:focus, textarea:focus{
+	box-shadow: 0px 0px 20px 0px #6af8ef;
+	-moz-box-shadow: 0px 0px 20px 0px #6af8ef;
+	-ms-box-shadow: 0px 0px 20px 0px #6af8ef;
+	-webkit-box-shadow: 0px 0px 20px 0px #6af8ef;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+.select__container_item select:focus{
+	box-shadow: 0px 0px 25px 0px #000;
+	-moz-box-shadow: 0px 0px 25px 0px #000;
+	-ms-box-shadow: 0px 0px 25px 0px #000;
+	-webkit-box-shadow: 0px 0px 25px 0px #000;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+.button_animate:hover {
+	background: skyblue;
+	border-radius: 5px;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+.map__button:hover {
+	background: skyblue;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+li:hover {
+	color: skyblue;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+.main input:hover{
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+	-ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+/*---*/
+.title__container_web input:hover{
+	background: skyblue;
+	transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+}
+/*---*/
+.social-item:hover {
+	transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+}
+/*---*/
+h2:hover::after {
+	width: 272px;
+	-moz-transition: all 0.45s;
+	-ms-transition: all 0.45s;
+	-webkit-transition: all 0.45s;
+}
+/*-----------------------КЕЙФРЕЙМЫ С ПСЕВДОКЛАССАМ------------------------------*/
+/*---*/
+.copyright__text {
+	animation: copyright-anim 3s infinite;
+	-moz-animation: copyright-anim 3s infinite;
+	-ms-animation: copyright-anim 3s infinite;
+	-webkit-animation: copyright-anim 3s infinite;
+}
+@keyframes copyright-anim{
+	0%{
+		color: black;
+	}
+	50%{
+		color: white;
+	}
+	100%{
+		color: black;
+	}
+}
+/*---*/
+.map__button {
+	animation: map-anim 3s ease-in-out infinite;
+	-moz-animation: map-anim 3s ease-in-out infinite;
+	-ms-animation: map-anim 3s ease-in-out infinite;
+	-webkit-animation: map-anim 3s ease-in-out infinite;
+}
+@keyframes map-anim {
+	0%{
+		transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.4);
+		-moz-transform: scale(1.4);
+		-ms-transform: scale(1.4);
+		-webkit-transform: scale(1.4);
+	}
+	100%{
+		transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+/*---*/
+.button_animate{
+	animation: interactivebtn 3s ease-in-out infinite;
+	-moz-animation: interactivebtn 3s ease-in-out infinite;
+	-ms-animation: interactivebtn 3s ease-in-out infinite;
+	-webkit-animation: interactivebtn 3s ease-in-out infinite;
+}
+@keyframes interactivebtn {
+	0%{
+		transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.18);
+		-moz-transform: scale(1.18);
+		-ms-transform: scale(1.18);
+		-webkit-transform: scale(1.18);
+	}
+	100%{
+		transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+/*---*/
+.row-box-item {
+	transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+}
+.row-box-item:hover{
+	transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+}
+
+/*-----------------------PRELOADER------------------------------*/
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+@keyframes preloader-bounce {
+  0%,100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+  	visibility: hidden;
+  }
+}

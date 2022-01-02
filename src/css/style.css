@@ -2,32 +2,60 @@ body {
 	font-family: 'FranklinGothic-Medium';
 	font-weight: 500;
 }
+h2{
+	min-width: 1400px;
+}
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	box-sizing: content-box;
+	position: relative;
+}
 
-
-
-header {}
-nav {
-	height: 61px;
+header {
+	position: relative;
+	width: 100%;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 61px;
 	background: #344051;
 	color: #fff;
 	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	width: 1920px;
+	z-index: 50;
+	padding: 0% 22.6% 0% 20.2%;
 }
+/*@media (max-width: 1549px) {
+	.header {
+		padding: 0% 15% 0% 35%;
+	}
+}*/
 .logo {
-	float: left;
-	font-size: 24px;
-	line-height: 61px;
-	padding-left: 388px;
+	font-size: 1.5rem;
 	text-transform: none;
+	padding: 0px 20px 0px 0px;
 }
 .menu {
-	float: left;
-	font-size: 17px;
-	line-height: 61px;
-	padding-left: 430px;
-}	
+	font-size: 1.0625rem;
+}
+ul {
+	display: flex;
+}
 .menu li {
-	float: left;
+	display: flex;
+	align-items: center;
 	margin-right: 40px;
+	transition: all 0.2s;
+	height: 61px;
+}
+.menu li:last-child{
+	margin-right: 0px;
+	transition: all 0.2s;
 }
 
 /*--------------------------------------------------*/
@@ -38,21 +66,21 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 1019px; /*calc(100% - 61px) почему-то не работает*/ 
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.10) 5%), url(../img/bgmain1.png) no-repeat right bottom/45%, url(../img/bgmain2.jpg) no-repeat center;
+	height: 1080px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.10) 5%), url(../img/bgmain1.png) no-repeat right bottom/800px, url(../img/bgmain2.jpg) no-repeat center;
 	text-align: center;
 }
 .main .title__container {
 	margin-right: 600px;
 }
 .main h1 {
-	font-size: 79px;
+	font-size: 4.9375rem;
 	color: #2c384a;
 }
 .main h4 {
 	margin: 29px 0px 0px 0px;
 	color: #79818d;
-	font-size: 21px;
+	font-size: 1.3125rem;
 }
 .buttons__container {
 	margin-right: 600px;
@@ -61,11 +89,12 @@ nav {
 .main input {
 	margin: 0px 13px;
 	color: #6d7682;
-	font-size: 19px;
+	font-size: 1.1875rem;
 	height: 42px;
 	padding: 0px 15px;
 	border: 2.1px solid #6d7682;
 	border-radius: 5px;
+	transition: all 0.2s;
 }
 
 /*--------------------------------------------------*/
@@ -73,18 +102,19 @@ nav {
 .about-me {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 730px;
 }
-.title_container {}
+.title_container {
+}
 .about-me h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 108px;
 	font-size: 33px;
 	text-transform: uppercase;
+	transition: all 0.2s;
 }
 h2::after {
 	content: '';
@@ -92,9 +122,10 @@ h2::after {
 	height: 4px;
 	width: 72px;
 	background: #d17700;
+	transition: all 0.2s;
 }
 .about-me .img__container {
-	margin-top: 59px;
+
 }
 .about-me .text__container {
 	margin-top: 22px;
@@ -107,14 +138,13 @@ h2::after {
 .text__lorem1 {}
 .text__lorem2 {}
 .about-me input {
-	margin-top: 33px;
 	color: #6d7682;
 	font-size: 17px;
 	height: 34px;
 	padding: 0px 13px 0px 33px;
 	border: 2.1px solid #6d7682;
 	border-radius: 5px;
-	background: url(../img/download.jpg) no-repeat 12px 50%;
+	background: url(../img/download.png) no-repeat 12px 50%;
 }
 
 /*--------------------------------------------------*/
@@ -200,6 +230,7 @@ h2::after {
  	background: #63b5ae;
  	border-radius: 5px;
  	color: #fff;
+ 	transition: all 0.2s;
  }
 .project__box {
  	padding-left: 83px;
@@ -263,7 +294,6 @@ h2::after {
 	display: flex;
 	justify-content: space-between;
 }
-
 /*--------------------------------------------------*/
 
 .statistic {
@@ -272,7 +302,7 @@ h2::after {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background: url(../img/statisticbg.jpg) no-repeat center;
+	background: url(../img/statisticbg.jpg) no-repeat center/auto 990px fixed;
 }
 .statistic .amount__container {
 	padding-top: 32px;
@@ -365,6 +395,10 @@ h2::after {
 }
 .social-item{
 	padding: 0px 27px;
+	transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
 }
 .message {
 	font-size: 21px;
@@ -376,6 +410,7 @@ h2::after {
 	height: 34px;
 	padding-left: 13px;
 	font-size: 17px;
+	transition: 0.2s;
 }
 .void {
 	width: 29px;
@@ -389,20 +424,20 @@ h2::after {
     	height: 94px; 
     	resize: none;
     	font-size: 17px;
+    	transition: 0.2s;
 } 
 .input__container{
 	display: flex;
 	justify-content: space-between;
 }
-.contact input{
+.contact__button input{
 	height: 46px;
 	padding: 0px 15px;
 	font-size: 17px;
 	border: 2.1px solid #fff;
-}
-.button__container-2 input{
 	color: #fff;
 	border-radius: 5px;
+	transition: 0.2s;
 }
 
 /*--------------------------------------------------*/
@@ -414,10 +449,11 @@ h2::after {
 	align-items: center;
 	background: url(../img/mapbg.jpg) no-repeat center;
 }
-.map .button__container {
+.map__button {
 	background: #fff;
 	padding: 18px 33px;
 	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+	transition: all 0.2s;
 }
 .map input {
 	font-size: 17.5px;
